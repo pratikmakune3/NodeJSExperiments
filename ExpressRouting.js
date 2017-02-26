@@ -19,4 +19,8 @@ app.get('/api', function(req, res){
   res.send('This is api');
 });
 
+app.get('/profile/:id',function(req, res){                              // :parameter
+  res.send('You have requested profile with the id ' + req.params.id);  //req.params.parameter
+});
+
 app.listen(3000);
