@@ -6,5 +6,6 @@ var server = http.createServer(function(req, res){    // Callback function execu
   res.end('Hello Request-maker, Server at your service !');   // End the response by sending the content to the browser
 });
 
+
 server.listen(3000, '127.0.0.1'); // Node listens to the port 3000 locally
 console.log('now listening to port 3000');

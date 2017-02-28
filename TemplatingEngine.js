@@ -11,7 +11,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/contact', function(req, res){
-  res.sendFile(__dirname + '/contact.html');
+  res.render('contact', {qs: req.query});
 });
 
 //WE PASS THE DYNAMIC DATA TO THE VIEW VIA OBJECT {}
